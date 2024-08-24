@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-y: hidden; /* Impede rolagem vertical */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+    position: relative;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+    background-image: url('https://i.pinimg.com/originals/2d/b8/7a/2db87aace70d1da18100317a2dafc681.gif');
+    background-size: cover;
+    background-attachment: fixed; /* Mantém o fundo fixo durante a rolagem */
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 3em; /* Tamanho da fonte maior para destaque */
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    color: #ff5722; /* Cor laranja */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    font-weight: bold; /* Texto em negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    border-bottom: 3px solid #000; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do texto */
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-image: url('https://i.pinimg.com/originals/46/ac/9e/46ac9e282d3c303934a72d941845785b.gif');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#player, #enemy {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+#player {
+    background-image: url('https://i.pinimg.com/originals/b0/7b/6f/b07b6ff89f4bd489dbae3b13bdd3ff65.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove o fundo */
+}
+
+#enemy {
+    background-image: url('https://thumbs.dreamstime.com/b/fundo-do-bloco-de-pedra-estilo-pixel-minecraft-conceito-material-cinzento-quadrado-sem-costura-pixelizado-jogo-vetor-da-mina-212305599.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#score-container {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#play-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#play-button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#developer-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
